@@ -14,16 +14,18 @@ body {
     font-family: 'Playfair Display', serif;
     font-family: 'Roboto Slab', serif;
     margin: 0;
-    background-color: #f0f0f0;
+    /* background-color: #f0f0f0; */
+    background-color: rgb(77, 60, 40)
+    ;
     font-weight: 500;
 }
 
 a {
-    color: #0f1384;
+    color: #b7b7b770;
 }
 
 a:hover {
-    color: #151abc;
+    color: #955e11;
 }
 
 .container {
@@ -59,6 +61,7 @@ a:hover {
     background: #ffffff;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.38);
     min-height: 65px;
+    background-color: rgb(77 60 40);
 }
 
 nav ul {
@@ -90,12 +93,17 @@ nav ul a:hover {
 header {
     line-height: 12px;
     font-size: 25px;
-    height: 500px;
+    height: 700px;
     background-image: url(assets/flower.jpg);
-    background-size: contain;
+    background-size: cover;
     color: rgb(33, 16, 221);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
 }
