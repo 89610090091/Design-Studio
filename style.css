@@ -14,19 +14,11 @@ body {
     font-family: 'Playfair Display', serif;
     font-family: 'Roboto Slab', serif;
     margin: 0;
-    /* background-color: #f0f0f0; */
-    background-color: rgb(77, 60, 40)
-    ;
+    background-color: rgb(151, 114, 68);
     font-weight: 500;
+    color: black;
 }
 
-a {
-    color: #b7b7b770;
-}
-
-a:hover {
-    color: #955e11;
-}
 
 .container {
     max-width: 1200px;
@@ -59,9 +51,8 @@ a:hover {
     width: 100%;
     padding: 10px;
     background: #ffffff;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.38);
     min-height: 65px;
-    background-color: rgb(77 60 40);
+    background-color: rgb(151, 114, 68);
 }
 
 nav ul {
@@ -76,6 +67,11 @@ nav ul li {
     line-height: 1.5;
 }
 
+a {
+    /* color: #292929; */
+    color: rgb(53, 53, 53);
+}
+
 nav ul a {
     text-transform: uppercase;
     font-size: 1.1em;
@@ -85,25 +81,59 @@ nav ul a {
 }
 
 nav ul a:hover {
+    color: black;
+    /* color: rgb(59, 182, 59); */
     font-weight: 500;
     font-size: 1.3em;
     border-bottom-color: #989898;
 }
 
 header {
-    line-height: 12px;
-    font-size: 25px;
+    color: rgb(128, 127, 127);
     height: 700px;
     background-image: url(assets/flower.jpg);
     background-size: cover;
-    color: rgb(33, 16, 221);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
-.img-fluid {
+.wrapper-header {
+    margin-top: 3em;
+    margin-left: 3em;
+    width: 588px;
+}
+
+@keyframes moveLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes moveRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+h1 {
+    font-size: 2em;
+    animation: moveLeft .5s ease-out .3s backwards;
+}
+
+header h2 {
+    animation: moveRight .5s ease-out .8s backwards;
+}
+
+[class*="column-2"] {
+    padding-left: 15px;
+    padding-right: 15px;
+    min-width: 1px;
     max-width: 100%;
-    height: auto;
+}
+
+.column-2 {
+    flex: 0 0 50%;
 }
