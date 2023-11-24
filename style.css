@@ -19,13 +19,16 @@ body {
     color: black;
 }
 
-
 .container {
+    display: flex;
+    flex-direction: column;
     max-width: 1200px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
 }
+
+
 
 .row {
     display: -webkit-flex;
@@ -34,6 +37,7 @@ body {
     flex-wrap: wrap;
     margin-left: -15px;
     margin-right: -15px;
+    gap: 25px;
 }
 
 .heading {
